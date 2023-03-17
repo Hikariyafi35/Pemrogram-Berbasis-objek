@@ -1,0 +1,24 @@
+package tugasminggu1;
+
+public class pbo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int diameterlingkaran = 10;
+		int alassegitiga = 6;
+		int tinggisegitiga = 8;
+		float pi = 3.14f;
+		float setengah = 0.5f;
+		System.out.println("Halo, Nama saya Hikari Aufa Yafi");
+		System.out.println("Saya adalah mahasiswa Teknik Informatika Universitas Dian Nuswantoro");
+		System.out.println("Saya sedang menulis Program Java");
+		System.out.println("Berikut adalah program menghitung bangun datar");
+		System.out.println("");
+		System.out.print("Keliling Lingkaran dengan diameter 10 = ");
+		System.out.println( diameterlingkaran * pi);
+		System.out.print("Luas Segitiga siku-siku = ");
+		System.out.print(setengah*alassegitiga*tinggisegitiga);
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package tugasminggu1;
+
+public class pbo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Halo, Nama saya Hikari Aufa Yafi");
+		System.out.println("Saya adalah mahasiswa Teknik Informatika Universitas Dian Nuswantoro");
+		System.out.println("Saya sedang menulis Program Java");
+		System.out.println("");
+		
+		
+	}
+
+}

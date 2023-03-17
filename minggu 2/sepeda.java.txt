@@ -1,0 +1,93 @@
+sepeda.java
+package tugasminggu2;
+
+public class Sepeda {
+	
+		//tempat untuk atribut
+		int jumlahroda = 2;
+		int gear;
+		String jenis;
+		String merk;
+		
+		//tempat untuk method
+		void detailbmx() {
+			String jenis = "Sepeda BMX ";
+			String merk = "Wimcycle ";
+			int gear = 5;
+			System.out.println(jenis+"bermerk "+merk+" memiliki jumlah roda "+jumlahroda+" jumlah gear " +gear);
+		}
+		
+		void detailpolygon() {
+			String jenis= "Sepeda gunung";
+			String merk = "Polygon" ; 
+			int gear = 4;
+			System.out.println(jenis+" bermerk "+ merk+" memiliki jumlah roda "+jumlahroda+ " jumlah gear "+gear);
+		}
+		void detailaviator() {
+			String jenis = "Sepeda gunung";
+			String merk = "aviator";
+			int gear = 3;
+			System.out.println(jenis+" bermerk "+ merk+" memiliki jumlah roda "+jumlahroda+ " jumlah gear "+gear);
+
+		}
+		
+}
+
+aksisepeda.java
+package tugasminggu2;
+
+public class AksiSepeda {
+
+	public static void main(String[] args) {
+		//membuat objek
+		Sepeda sepedajenis = new Sepeda();
+		
+		//mengakses atribut dan method
+		String detailsepeda = sepedajenis.jenis;
+		
+		
+		sepedajenis.detailbmx();
+		sepedajenis.detailpolygon();
+		sepedajenis.detailaviator();
+	}
+	
+}
+
+lampu.java
+package tugaslampu;
+
+public class Lampu {
+	
+	boolean nyala;
+	
+	void nyalakanLampu() {
+		nyala= true;
+		System.out.println("Apakah lampu menyala? "+ nyala);
+	}
+	void matikanLampu() {
+		nyala = false;
+		System.out.println("Apakah lampu menyala? "+ nyala );
+	}
+}
+
+aksilampu.java
+package tugaslampu;
+
+public class aksilampu {
+
+	public static void main(String[] args) {
+		//membuat objek
+		Lampu lampunyala = new Lampu();
+		
+		//memngakses atribut dan metghod
+		
+		boolean nyala = lampunyala.nyala;
+		
+		lampunyala.nyalakanLampu();
+		lampunyala.matikanLampu();
+		
+
+	}
+
+}
+
