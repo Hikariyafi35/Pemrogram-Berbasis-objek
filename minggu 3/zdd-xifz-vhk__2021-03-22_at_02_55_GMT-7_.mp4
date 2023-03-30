@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<HEAD>
+<Title>UDN File Sharing - Easy way to share your files</Title>
+<script language="JavaScript" type="text/javascript" src="http://files.dinus.ac.id/xupload.js"></script>
+<link rel="stylesheet" type="text/css" href="http://files.dinus.ac.id/main.css">
+</HEAD>
+<BODY>
+
+<Center>
+<div style="width:680px;">
+<a href="http://files.dinus.ac.id"><img src="http://files.dinus.ac.id/images/logo.png" border=0 alt="UDN File Sharing" title="UDN File Sharing - upload and share your files"></a>
+<br>
+With UDN File Sharing you can upload & share any of your files for free.<br>Simply use the upload form below and start sharing!
+<br><br>
+
+<Script type="text/javascript">
+var ext_allowed='';
+var ext_not_allowed='exe|com|php|cgi|pl|sh|py|7z';
+var max_upload_files='5';
+var max_upload_size='1024';
+var descr_mode='1';
+</Script>
+
+
+
+<form name="F1Upload" enctype="multipart/form-data" action="/cgi-bin/upload.cgi?upload_id=" method="post" onSubmit="return StartUpload(this);">
+<div class="rdc_box"><div class="rdc_top"><div></div></div><div class="rdc_content"><p>
+
+<table cellpadding=0 cellspacing=0 id="div1" style="margin:5px;position:static;height: 200px;"><tr><td valign=top>
+
+<div id="upload_input"><input id="my_file_element" type="file" name="file_1" size=79></div>
+
+<Table id="file_list"><TR><TD nowrap>
+<b>Up to <font id='x_max_size'></font>, <font id='x_max_files'>1</font> files max</b><br>
+<div id="files_list" style="font: 12px Arial;"></div>
+</TD></TR></Table>
+<a href="#" style="line-height:20px;" onClick="$('optidiv').style.position='static';this.style.display='none';">Show Advanced Options</a>
+<div id="optidiv">
+Recipient's Email: <input type="text" name="link_rcpt" class="myForm"> &nbsp; 
+Link Password: <input type="password" name="link_pass" class="myForm">
+</div>
+
+<br>
+<center>
+<label for="tos">I have read and agree to the</label> <a href="tos.html">TOS</a> <input type="checkbox" name="tos" value="1" id="tos" checked onClick="if(this.checked){$('submit_btn').disabled=false}else{$('submit_btn').disabled=true};this.blur();"><br>
+<input type="submit" value=" Start Upload! " class="btn" id="submit_btn">
+</center>
+<br>
+</td></tr></table>
+
+<div id="progress2" style="position: absolute;left:-9999px;">
+<iframe src="blank.html" id="progress2f" name="transfer2" SCROLLING=NO frameborder=0 style="width: 395px;height: 200px;"></iframe>
+</div>
+
+<p></div><div class="rdc_bottom"><div></div></div></div>
+</form>
+
+<iframe src="javascript:false;" name="xupload" style="position:absolute;left:-9999px;"></iframe>
+<Script type="text/javascript">
+var form_action = getFormAction(document.F1Upload);
+InitUploadSelector();
+</Script>
+
+</div>
+<br>
+<a href="http://files.dinus.ac.id">Home</a> | <a href="http://files.dinus.ac.id/download/">Download Area</a> | <a href="http://files.dinus.ac.id/faq.html">FAQ</a> | <a href="http://files.dinus.ac.id/tos.html">Terms of service</a> | <a href="http://files.dinus.ac.id/contact.html">Contact Us</a>
+</Center>
+
+<br><Center><a href="http://sibsoft.net/xfilesharing.html" style="color:#999;text-decoration:none;font-size:11px;">Powered by XFileSharing</a></Center></body>
+</HTML>
