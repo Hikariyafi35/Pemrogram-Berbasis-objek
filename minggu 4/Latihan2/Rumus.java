@@ -1,3 +1,4 @@
+package Latihan2;
 
 
 public class Rumus {
@@ -48,3 +49,4 @@ public class Rumus {
     // return x;
     // }
 }
+
