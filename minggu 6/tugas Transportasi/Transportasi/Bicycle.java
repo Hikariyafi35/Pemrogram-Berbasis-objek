@@ -10,7 +10,7 @@ public class Bicycle {
         String merek = "PCX";
         int keluaran = 2022;
         int harga = 30000000;
-        
+
         
         System.out.println("Bicycle"+"\nmerek Bicycle : "+merek+" \nTahun Keluaran : "+keluaran+ "\nTotal Harga : " +harga);
     }
