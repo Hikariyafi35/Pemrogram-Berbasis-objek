@@ -2,17 +2,41 @@ package Transportasi;
 
 public class Mobil {
     //tempat untuk atribut
-	int harga;
-	int keluaran;
-	String merk;
-	
-    public void detailmobil(){
-        String merek = "Avanza";
-        int keluaran = 2008;
-        int harga = 150000000;
+	public int roda;
+    public String warna;
+    public int kecepatan;
+    public String merek;
 
-        
-        System.out.println("Mobil"+"\nmerek mobil : "+merek+" \nTahun Keluaran : "+keluaran+ "\nTotal Harga : " +harga);
+    public void berjalan(String arah){
+        System.out.println("bergerak ke "+arah);
+    }
+
+    public void berhenti(){
+        System.out.println("berhenti");
     }
 	
+    public void infokendaraan(){
+        System.out.println("kendaraan beroda "+roda);
+        System.out.println("kendaraan berwarna "+warna);
+        System.out.println("kendaraan bermerk "+ merek);
+    }
+
+    public int kecepatansekarang(int speed, String tipe)
+    {
+        int x = 0;
+        if(tipe == "cepat")
+        {
+            x = kecepatan + speed;
+        }
+        else if(tipe == "lambat")
+        {
+            x = kecepatan - speed;
+        }
+        return x;
+    }
+    public void mundur()
+    {
+        int x = 5;
+        kecepatan = kecepatan-x;
+    }
 }

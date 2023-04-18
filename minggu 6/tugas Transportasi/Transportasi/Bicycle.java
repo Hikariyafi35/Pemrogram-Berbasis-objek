@@ -2,17 +2,16 @@ package Transportasi;
 
 public class Bicycle {
      //tempat untuk atribut
-	int harga;
-	int keluaran;
-	String merk;
+     public int gear = 5;
+     int roda;
+     String jenisSepeda;
+     String merkSepeda;
+ 
 	
-    public void detailbicycle(){
-        String merek = "PCX";
-        int keluaran = 2022;
-        int harga = 30000000;
-
-        
-        System.out.println("Bicycle"+"\nmerek Bicycle : "+merek+" \nTahun Keluaran : "+keluaran+ "\nTotal Harga : " +harga);
+     public Bicycle(int TotalRoda, String jenis, String merk) {
+        roda = TotalRoda;
+        jenisSepeda = jenis;
+        merkSepeda = merk;
+        System.out.println("Sepeda: " + jenis + " bermerk " + merk + " memiliki jumlah roda " + TotalRoda);
     }
-	
 }
