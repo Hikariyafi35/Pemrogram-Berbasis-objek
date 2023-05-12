@@ -2,6 +2,7 @@ package uts_A11_2021_13217;
 
 import java.util.HashSet;
 import java.util.Set;
+
 public class Mahasiswa {
     public String nim;
     public String nama;
@@ -42,11 +43,11 @@ public class Mahasiswa {
 
     public void infokrsMahasiswa(){
         System.out.println(this.nama+" "+ "KRS  : ");
-        Set<String> uniqueKrs = new HashSet<String>();
+        Set<String> krss = new HashSet<String>();
         for (int i = 0; i < this.krs.length; i++) {
-            uniqueKrs.add(this.krs[i]);
+            krss.add(this.krs[i]);
         }
-        for (String mataKuliah : uniqueKrs) {
+        for (String mataKuliah : krss) {
             System.out.println("- " + mataKuliah);
         }
 

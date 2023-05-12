@@ -21,18 +21,18 @@ public class MahasiswaMain {
 
         for (int i = 0;i < TotalMahasiswa; i++){
             System.out.println("Mahasiswa ke "+ (i+1));
-            System.out.print("Nama        : ");
-            String nama = scanner.nextLine();
             System.out.print("NIM           : ");
             String nim = scanner.nextLine();
+            System.out.println("Nama        : ");
+            String nama = scanner.nextLine();
             System.out.print("Semester      : ");
             int semester = scanner.nextInt();
             scanner.nextLine();
-            System.out.print("Usia        : ");
+            System.out.println("Usia        : ");
             int usia = scanner.nextInt();
             scanner.nextLine();
 
-            //input matkul
+            //input krs
 
             System.out.println("Total Mata Kuliah   : ");
             int totalMatkul = scanner.nextInt();
@@ -40,9 +40,9 @@ public class MahasiswaMain {
             float[] nilai = new float[totalMatkul];
             String[] krs = new String[totalMatkul];
             for (int t=0; t <totalMatkul; t++) {
-                System.out.print("Mata kuliah -"+ (t+1) +" : ");
+                System.out.println("Krs ke "+ (t+1) +" : ");
                 krs[t] = scanner.nextLine();
-                System.out.print("Nilai Mata kuliah "+krs[t]+" : ");
+                System.out.println("Nilai Mata kuliah "+krs[t]+" : ");
                 nilai[t] = scanner.nextFloat();
                 scanner.nextLine();
             }
@@ -57,7 +57,7 @@ public class MahasiswaMain {
             scanner.nextLine(); // consume newline character
 
 
-            //membuat objek
+            //input data mahasiswa
 
             Mahasiswa mahasiswa = new Mahasiswa(nim, nama, semester, usia, krs);
             mahasiswa.nilai = nilai;
@@ -123,8 +123,6 @@ public class MahasiswaMain {
                 mhs.infokrsMahasiswa();
                 System.out.println("=====================");
             }
-            
-
         scanner.close();
     }
 
