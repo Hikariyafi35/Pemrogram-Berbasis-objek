@@ -2,6 +2,9 @@ package Implementasi.HP;
 import java.io.Console;
 
 public interface  Phone {
+    /* antarmuka (interface) bernama Phone. Interface ini mendefinisikan beberapa konstanta dan 
+    metode yang akan diimplementasikan oleh kelas Cellphone.
+    */
     public static final int statuson = 1;
     public static final int statusoff = 0;
 

@@ -10,18 +10,18 @@ public class CellphoneMain {
         char hidup;
         boolean menu = true;
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // untuk membuat inputan
         System.out.println("### Masukkan merk dan tipe HP ###");
         System.out.println("Merk : ");
-        merk = sc.nextLine();
+        merk = sc.nextLine();//membuat inputan untuk merk
         System.out.println("Tipe : ");
-        tipe = sc.nextLine();
+        tipe = sc.nextLine();// membuat inputan tipe
 
-        Contact kntk = new Contact(merk, tipe);
+        Contact kntk = new Contact(merk, tipe); //membuat objek baru dari claas contact bernama kntk
         System.out.println("Ponsel : "+merk+ " "+tipe);
         System.out.println("Hidupkan HP?");
-        hidup = sc.next().charAt(0);
-        if (hidup == 'Y' || hidup == 'y'){
+        hidup = sc.next().charAt(0);//inputan untuk kondisi dibawah
+        if (hidup == 'Y' || hidup == 'y'){ // membuat kondisi jika di inputkan Y atau y maka poweron
             kntk.powerOn();
         }else{
             kntk.powerOff();
@@ -41,7 +41,7 @@ public class CellphoneMain {
             System.out.println("===============================================");
             System.out.print("Pilihan : ");
             int pilih = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine();// membuat menu sesuai metod yang akan dipanggil
             switch (pilih) {
                 case 1:
                     kntk.powerOn();
@@ -89,7 +89,7 @@ public class CellphoneMain {
                     System.out.println("Pilihan anda salah");
                     break;
             }
-        }while(menu == true);
+        }while(menu == true);//jika nilai menu masih true maka perulangan akan terus dilakukan
         sc.close();
     
     }

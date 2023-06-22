@@ -1,0 +1,11 @@
+Video Tutorial :
+1. http://www.ajibsusanto.net/2021/05/serial-belajar-oop-dengan-java.html
+2. http://www.ajibsusanto.net/2021/05/oop-with-java-part2-class-object.html
+3. http://www.ajibsusanto.net/2021/08/serial-belajar-oop-with-java-part3.html
+4. http://www.ajibsusanto.net/2021/05/serial-belajar-oop-with-java-part-4.html
+5. http://www.ajibsusanto.net/2021/05/serial-belajar-oop-with-java-part4.html
+6. http://www.ajibsusanto.net/2021/08/serial-belajar-oop-with-java-part6.html
+7. http://www.ajibsusanto.net/2021/06/serial-belajar-oop-with-java.html
+8. http://www.ajibsusanto.net/2021/06/polymorphism-java-semuanyaajib.html
+9. http://www.ajibsusanto.net/2021/06/serial-belajar-oop-with-java-part9-form.html
+10. http://www.ajibsusanto.net/2021/07/serial-belajar-oop-with-java-part10.html
