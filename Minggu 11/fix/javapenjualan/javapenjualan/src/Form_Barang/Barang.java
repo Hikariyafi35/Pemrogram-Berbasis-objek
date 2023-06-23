@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author Zaky Dafalas
+ 
  */
 public class Barang extends javax.swing.JFrame {
 
